@@ -1,6 +1,6 @@
 # devops-netology
 [![Maintenance](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/Dexogen/devops-netology)
-[![GitLab last commit](https://badgen.net/gitlab/last-commit/Dexogen/devops-netology/)](https://github.com/Dexogen/devops-netology/-/commits)
+[![GitLab last commit](https://badgen.net/gitlab/last-commit/Dexogen/devops-netology)](https://github.com/Dexogen/devops-netology/-/commits)
 ![devops-netology](intro.jpg)
 
 ## Введение в DevOps
