@@ -1,5 +1,5 @@
 # devops-netology
-[![Maintenance](https://img.shields.io/badge/maintained%3F-yes-green.svg)](https://github.com/Dexogen/devops-netology)
+[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/Dexogen/devops-netology)
 [![GitLab last commit](https://badgen.net/github/last-commit/Dexogen/devops-netology/main)](https://github.com/Dexogen/devops-netology/commits/main)
 
 ![devops-netology](intro.jpg)
