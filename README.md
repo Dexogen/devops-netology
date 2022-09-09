@@ -2,7 +2,7 @@
 [![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/Dexogen/devops-netology)
 [![GitLab last commit](https://badgen.net/github/last-commit/Dexogen/devops-netology/main)](https://github.com/Dexogen/devops-netology/commits/main)
 
-![devops-netology](intro.jpg)
+<p align="center"><img src="intro.jpg" /></p>
 
 ## Введение в DevOps
 * [x] [Введение в DevOps](01-intro/README.md#01-intro-01)
