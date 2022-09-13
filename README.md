@@ -15,7 +15,7 @@
 
 ## Основы системного администрирования
 * [x] [Работа в терминале (лекция 1)](03-sysadmin/README.md#03-sysadmin-01-terminal) 
-* [ ] [Работа в терминале (лекция 2)](03-sysadmin/README.md#03-sysadmin-02-terminal) 
+* [x] [Работа в терминале (лекция 2)](03-sysadmin/README.md#03-sysadmin-02-terminal) 
 * [ ] [Операционные системы (лекция 1)](03-sysadmin/README.md#03-sysadmin-03-os) 
 * [ ] [Операционные системы (лекция 2)](03-sysadmin/README.md#03-sysadmin-04-os) 
 * [ ] [Файловые системы](03-sysadmin/README.md#03-sysadmin-05-fs) 
