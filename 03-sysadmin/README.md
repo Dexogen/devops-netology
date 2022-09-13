@@ -3,6 +3,7 @@
 * [03-sysadmin-01-terminal](#03-sysadmin-01-terminal)
 * [03-sysadmin-02-terminal](#03-sysadmin-02-terminal)
 * [03-sysadmin-03-os](#03-sysadmin-03-os)
+* [03-sysadmin-04-os](#03-sysadmin-04-os)
 
 ---
 
