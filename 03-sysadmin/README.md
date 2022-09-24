@@ -4,7 +4,7 @@
 * [03-sysadmin-02-terminal](#03-sysadmin-02-terminal)
 * [03-sysadmin-03-os](#03-sysadmin-03-os)
 * [03-sysadmin-04-os](#03-sysadmin-04-os)
-
+* [03-sysadmin-05-fs](#03-sysadmin-05-fs)
 ---
 
 ## 03-sysadmin-01-terminal
@@ -357,3 +357,5 @@
 	❯ ulimit -H -u
 	3842
 	# Ограничение можно поднять через ulimit, но опять же для конкретного шелла. Преманентные значения всё так же в /etc/security/limits.conf
+
+## 03-sysadmin-05-fs
