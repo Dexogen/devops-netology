@@ -583,6 +583,34 @@ HOST: stackoverflow.com
 [press enter]
 ```
 - В ответе укажите полученный HTTP код, что он означает?
+<details><summary>Ответ</summary>
+```
+❯ telnet stackoverflow.com 80
+Trying 151.101.193.69...
+Connected to stackoverflow.com.
+Escape character is '^]'.
+GET /questions HTTP/1.0
+HOST: stackoverflow.com
+
+HTTP/1.1 301 Moved Permanently
+Connection: close
+Content-Length: 0
+Server: Varnish
+Retry-After: 0
+Location: https://stackoverflow.com/questions
+Accept-Ranges: bytes
+Date: Mon, 17 Oct 2022 13:41:58 GMT
+Via: 1.1 varnish
+X-Served-By: cache-fra19151-FRA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1666014118.274850,VS0,VE0
+Strict-Transport-Security: max-age=300
+X-DNS-Prefetch-Control: off
+
+Connection closed by foreign host.
+```
+</details>
 2. Повторите задание 1 в браузере, используя консоль разработчика F12.
 - откройте вкладку `Network`
 - отправьте запрос http://stackoverflow.com
