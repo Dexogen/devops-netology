@@ -1051,6 +1051,14 @@ udp        0      0 0.0.0.0:1900            0.0.0.0:*                           
 ---
 ## 03-sysadmin-09-security
 1. Установите Bitwarden плагин для браузера. Зарегестрируйтесь и сохраните несколько паролей.
+```bash
+#По удачному стечению обстоятельств как раз разворачивал у себя в компании опенсорсную реализацию Vaultwarden, которая прекрасно работает со всеми клиентами Bitwarden.
+root@vault1-ti:~/consul# docker ps -a
+CONTAINER ID   IMAGE                                                     STATUS         PORTS				NAMES
+8ddf3f6710da   docker-hub.nexus.infra/consul:1.10.2                      Up 13 months   						vault-consul-agent
+72629886dcfa   docker-hub.nexus.infra/consul:1.10.2                      Up 13 months   						vault-consul-server1
+36627d5bafa3   docker-hub.nexus.infra/hashicorp/counting-service:0.0.2   Up 13 months   9001/tcp		weasel
+```
 2. Установите Google authenticator на мобильный телефон. Настройте вход в Bitwarden акаунт через Google authenticator OTP.
 3. Установите apache2, сгенерируйте самоподписанный сертификат, настройте тестовый сайт для работы по HTTPS.
 4. Проверьте на TLS уязвимости произвольный сайт в интернете (кроме сайтов МВД, ФСБ, МинОбр, НацБанк, РосКосмос, РосАтом, РосНАНО и любых госкомпаний, объектов КИИ, ВПК ... и тому подобное).
