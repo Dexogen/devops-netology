@@ -1343,7 +1343,7 @@ Host my-awesome-server
 	User firstman
 	IdentityFile ~/.ssh/firstman_rsa
 ...
-❯ ssh firstman
+❯ ssh my-awesome-server
 ```
 7. Соберите дамп трафика утилитой tcpdump в формате pcap, 100 пакетов. Откройте файл pcap в Wireshark.
 ```bash
