@@ -1350,5 +1350,6 @@ Host my-awesome-server
 ❯ tcpdump -i vmbr0 -c 100 -w awesome-dump.pcap
 ```
 ![Wireshark](wireshark.png)
+
 8. [*] Просканируйте хост scanme.nmap.org. Какие сервисы запущены?
 9. [*] Установите и настройте фаервол ufw на web-сервер из задания 3. Откройте доступ снаружи только к портам 22,80,443
