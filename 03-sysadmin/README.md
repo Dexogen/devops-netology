@@ -1328,7 +1328,27 @@ TLSv1.3 (no server order, thus listed by strength)
  Done 2022-10-23 23:27:35 [ 109s] -->> 172.67.69.48:443 (awatera.com) <<--
 ```
 5. Установите на Ubuntu ssh сервер, сгенерируйте новый приватный ключ. Скопируйте свой публичный ключ на другой сервер. Подключитесь к серверу по SSH-ключу.
+```bash
+❯ sudo apt-get install openssh-server -y
+❯ ssh-keygen
+...
+❯ ssh-copy-id firstman@my-awesome-server
+❯ ssh firstman@my-awesome-server
+```
 6. Переименуйте файлы ключей из задания 5. Настройте файл конфигурации SSH клиента, так чтобы вход на удаленный сервер осуществлялся по имени сервера.
+```bash
+❯ cat ~/.ssh/config
+...
+Host my-awesome-server
+	User firstman
+	IdentityFile ~/.ssh/firstman_rsa
+...
+❯ ssh firstman
+```
 7. Соберите дамп трафика утилитой tcpdump в формате pcap, 100 пакетов. Откройте файл pcap в Wireshark.
+```bash
+❯ tcpdump -i vmbr0 -c 100 -w awesome-dump.pcap
+```
+![Wireshark](wireshark.png)
 8. [*] Просканируйте хост scanme.nmap.org. Какие сервисы запущены?
 9. [*] Установите и настройте фаервол ufw на web-сервер из задания 3. Откройте доступ снаружи только к портам 22,80,443
