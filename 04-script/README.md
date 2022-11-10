@@ -138,7 +138,7 @@ for result in result_os.split('\n'):
 
 import os
 
-bash_command = ['cd ~/git/devops-netology','pwd; git status -uall --porcelain | sed s/^...// | awk \'{ print(ENVIRON["PWD"] "/" $0); }\'']
+bash_command = ['cd ~/git/devops-netology','git status -uall --porcelain | sed s/^...// | awk \'{ print(ENVIRON["PWD"] "/" $0); }\'']
 result_os = os.popen(' && '.join(bash_command)).read()
 for result in result_os.split('\n'):
     print(result)
@@ -146,7 +146,9 @@ for result in result_os.split('\n'):
 
 #### Вывод скрипта при запуске при тестировании:
 ```
-???
+❯ ./run.py
+/home/dexogen/git/devops-netology/modified.file
+/home/dexogen/git/devops-netology/terraform/added.file
 ```
 
 ### Задание 3
@@ -155,12 +157,27 @@ for result in result_os.split('\n'):
 
 #### Ваш скрипт:
 ```python
-???
+#!/usr/bin/python3
+
+import os
+import sys
+
+repo = sys.argv[1]
+
+if os.path.exists(repo):
+    bash_command = ['cd '+repo,'cd $(git rev-parse --show-toplevel)','git status -uall --porcelain | sed s/^...// | awk \'{ print(ENVIRON["PWD"] "/" $0); }\'']
+    result_os = os.popen(' && '.join(bash_command)).read()
+    for result in result_os.split('\n'):
+        print(result)
+else:
+    print("Path not found")
 ```
 
 #### Вывод скрипта при запуске при тестировании:
 ```
-???
+❯ ./run.py /home/dexogen/git/devops-netology/terraform/
+/home/dexogen/git/devops-netology/modified.file
+/home/dexogen/git/devops-netology/terraform/added.file
 ```
 
 ### Задание 4
