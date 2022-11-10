@@ -261,7 +261,7 @@ while True:
 ### Обязательная задача 1
 Мы выгрузили JSON, который получили через API запрос к нашему сервису:
 
-```
+```json
     { "info" : "Sample JSON output from our service\t",
         "elements" :[
             { "name" : "first",
@@ -278,8 +278,20 @@ while True:
   Нужно найти и исправить все ошибки, которые допускает наш сервис
 
 #### Ваш скрипт:
-```
-???
+```json
+{
+    "info": "Sample JSON output from our service",
+    "elements": [{
+            "name": "first",
+            "type": "server",
+            "ip": "7.1.7.5"
+        }, {
+            "name": "second",
+            "type": "proxy",
+            "ip": "71.78.22.43"
+        }
+    ]
+}
 ```
 
 ### Задание 2
