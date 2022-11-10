@@ -300,22 +300,59 @@ while True:
 
 #### Ваш скрипт:
 ```python
-???
+#!/usr/bin/python3
+
+import socket
+import time
+import json
+import yaml
+
+services = {
+                "drive.google.com": "0.0.0.0",
+                "mail.google.com": "0.0.0.0",
+                "google.com": "0.0.0.0"
+            }
+
+while True:
+    for service in services.keys():
+        ip_last = services[service]
+        check_ip = socket.gethostbyname(service)
+        if check_ip != ip_last:
+            print(f"""[WARN] IP was changed for {service}: {ip_last} => {check_ip}""")
+            services[service] = check_ip
+        else:
+            print(f"""[INFO] {ip_last}\t{service}""")
+    with open('result.yml', 'w') as yaml_file:
+        yaml.dump(services, yaml_file)
+    with open('result.json', 'w') as json_file:
+        json.dump(services, json_file)
+    time.sleep(3)
 ```
 
 #### Вывод скрипта при запуске при тестировании:
 ```
-???
+[WARN] IP was changed for drive.google.com: 0.0.0.0 => 74.125.205.194
+[WARN] IP was changed for mail.google.com: 0.0.0.0 => 108.177.14.18
+[WARN] IP was changed for google.com: 0.0.0.0 => 108.177.14.100
+[INFO] 74.125.205.194   drive.google.com
+[INFO] 108.177.14.18    mail.google.com
+[INFO] 108.177.14.100   google.com
 ```
 
 #### json-файл(ы), который(е) записал ваш скрипт:
 ```json
-???
+{
+  "drive.google.com": "142.250.150.194",
+  "mail.google.com": "74.125.205.17",
+  "google.com": "64.233.162.138"
+}
 ```
 
 #### yml-файл(ы), который(е) записал ваш скрипт:
 ```yaml
-???
+drive.google.com: 142.250.150.194
+google.com: 64.233.162.138
+mail.google.com: 74.125.205.17
 ```
 
 ### Дополнительное задание (со звездочкой*) - необязательно к выполнению
