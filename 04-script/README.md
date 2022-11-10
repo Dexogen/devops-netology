@@ -58,7 +58,7 @@ done
 HOSTS=("192.168.0.1" "173.194.222.113" "87.250.250.242")
 for IP in ${HOSTS[@]}
 do
-    seq 5 | xargs -Iz echo "$(date '+%Y/%m/%d %H:%M:%S') $(nc -vzw5 "$IP"  80 2>&1)" >> my.log
+    seq 5 | xargs -Iz echo "$(date '+%Y/%m/%d %H:%M:%S') $(nc -vzw5 "$IP" 80 2>&1)" >> my.log
 done
 ```
 
@@ -68,7 +68,19 @@ done
 
 #### Ваш скрипт:
 ```bash
-???
+HOSTS=("192.168.0.1" "173.194.222.113" "87.250.250.242")
+while true
+do
+  for IP in ${HOSTS[@]}
+  do
+    if ! nc -vzw5 "$IP" 80 2>&1
+    then
+      echo $IP > error.log
+      exit 0
+    fi
+  done
+  sleep 1
+done
 ```
 
 ### Дополнительное задание (со звездочкой*) - необязательно к выполнению
