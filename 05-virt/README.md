@@ -192,7 +192,7 @@ my.dudes  sad.pepe
 Соберите Docker образ с Ansible, загрузите на Docker Hub и пришлите ссылку вместе с остальными ответами к задачам.
 
 > Решил собрать всё-таки версию более свежую 6.6.0 на alpine 3.16.2.
-[![Docker repo](https://img.shields.io/badge/dexogen-ansible%3A6.6.0-green)
+>[![Docker repo](https://img.shields.io/badge/dexogen-ansible%3A6.6.0-green)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/dexogen/ansible/6.6.0)](https://hub.docker.com/r/dexogen/ansible)
 # 05-virt-04-docker-compose
 
