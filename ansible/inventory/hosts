@@ -1,9 +1,0 @@
-[nodes:children]
-manager
-worker
-
-[manager]
-
-
-[worker]
-
