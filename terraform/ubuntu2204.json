@@ -1,0 +1,18 @@
+{
+    "builders": [
+      {
+        "type": "yandex",
+        "folder_id": "{{ user `YC_FOLDER` }}",
+	"token": "{{ user `YC_TOKEN` }}",
+        "zone": "{{ user `YC_ZONE` }}",
+        "image_name": "ubuntu-22-04",
+        "image_family": "my-images",
+        "image_description": "Netology homework image Ubuntu 22.04 LTS",
+        "source_image_family": "ubuntu-2204-lts",
+        "subnet_id": "{{ user `YC_SUBNET_ID` }}",
+        "use_ipv4_nat": true,
+        "disk_type": "network-ssd",
+        "ssh_username": "ubuntu"
+      }
+    ]
+}
