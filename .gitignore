@@ -1,2 +1,3 @@
 05-virt/misc/terraform/public.key
 05-virt/misc/ansible/inventory/hosts
+*.tfstate
