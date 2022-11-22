@@ -18,16 +18,25 @@
 * [x] [Работа в терминале (лекция 2)](03-sysadmin/README.md#03-sysadmin-02-terminal) 
 * [x] [Операционные системы (лекция 1)](03-sysadmin/README.md#03-sysadmin-03-os) 
 * [x] [Операционные системы (лекция 2)](03-sysadmin/README.md#03-sysadmin-04-os) 
-* [ ] [Файловые системы](03-sysadmin/README.md#03-sysadmin-05-fs) 
-* [ ] [Компьютерные сети (лекция 1)](03-sysadmin/README.md#03-sysadmin-06-net) 
-* [ ] [Компьютерные сети (лекция 2)](03-sysadmin/README.md#03-sysadmin-07-net) 
-* [ ] [Компьютерные сети (лекция 3)](03-sysadmin/README.md#03-sysadmin-08-net) 
-* [ ] [Элементы безопасности информационных систем](03-sysadmin/README.md#03-sysadmin-09-security) 
+* [x] [Файловые системы](03-sysadmin/README.md#03-sysadmin-05-fs) 
+* [x] [Компьютерные сети (лекция 1)](03-sysadmin/README.md#03-sysadmin-06-net) 
+* [x] [Компьютерные сети (лекция 2)](03-sysadmin/README.md#03-sysadmin-07-net) 
+* [x] [Компьютерные сети (лекция 3)](03-sysadmin/README.md#03-sysadmin-08-net) 
+* [x] [Элементы безопасности информационных систем](03-sysadmin/README.md#03-sysadmin-09-security) 
 
 ## Скриптовые языки и языки разметки: Python, Bash, YAML, JSON
-* [ ] [Командная оболочка Bash: практические навыки](04-script/README.md#04-script-01-bash) 
-* [ ] [Использование Python для решения типовых DevOps задач](04-script/README.md#04-script-02-py) 
-* [ ] [Языки разметки JSON и YAML](04-script/README.md#04-script-03-yaml) 
+* [x] [Командная оболочка Bash: практические навыки](04-script/README.md#04-script-01-bash) 
+* [x] [Использование Python для решения типовых DevOps задач](04-script/README.md#04-script-02-py) 
+* [x] [Языки разметки JSON и YAML](04-script/README.md#04-script-03-yaml) 
 
-## Дополнительный блок
-* [ ] [Разбор задач модуля](#) 
+## Виртуализация
+
+* [x] [Введение в виртуализацию](05-virt/README.md#05-virt-01-basics)
+* [x] [Применение принципов IaaC в работе с виртуальными машинами](05-virt/README.md#05-virt-02-iaac)
+* [x] [Введение в Docker](05-virt/README.md#05-virt-03-docker)
+* [x] [Оркестрация группой Docker контейнеров на примере Docker Compose](05-virt/README.md#05-virt-04-docker-compose)
+* [x] [Оркестрация кластером Docker контейнеров на примере Docker Swarm](05-virt/README.md#05-virt-05-docker-swarm)
+
+## Администрирование баз данных
+
+* [x] [Типы и структура СУБД](06-db/README.md#06-db-01-basics)
